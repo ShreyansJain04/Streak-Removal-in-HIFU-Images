@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 from PIL import Image
 import numpy as np
@@ -106,10 +94,10 @@ def process_images(input_dir, output_dir_images, output_dir_masks):
             mask_image = Image.fromarray(np.uint8(streak_mask) * 255)
             mask_image.save(mask_image_path)
 
-# Specify the input and output directories
-input_directory = './cropped_images_e926c20632_without_streaks'  # Directory containing the original images
-output_directory_images = './modified_images_blend'  # Directory to save modified images
-output_directory_masks = './label_images_blend'  # Directory to save masks
+# # Specify the input and output directories
+# input_directory = './cropped_images_e926c20632_without_streaks'  # Directory containing the original images
+# output_directory_images = './modified_images_blend'  # Directory to save modified images
+# output_directory_masks = './label_images_blend'  # Directory to save masks
 # Process the images
-process_images(input_directory, output_directory_images, output_directory_masks)
+# process_images(input_directory, output_directory_images, output_directory_masks)
 
